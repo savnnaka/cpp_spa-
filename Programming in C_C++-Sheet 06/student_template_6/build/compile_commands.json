@@ -1,0 +1,37 @@
+[
+{
+  "directory": "/home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/student_template_6/build",
+  "command": "/usr/bin/clang++-13   -I../include -I../submission  -g   -Wall -Wextra -Wshadow -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wsign-conversion -Wnull-dereference -Wdouble-promotion -Wformat=2 -Wmisleading-indentation -std=gnu++2a -o CMakeFiles/csg.dir/main.cpp.o -c \"/home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/student_template_6/main.cpp\"",
+  "file": "/home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/student_template_6/main.cpp"
+},
+
+{
+  "directory": "/home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/student_template_6/build",
+  "command": "/usr/bin/clang++-13  -Dsubmission_EXPORTS -I../submission -I../include  -g -fPIC   -Wall -Wextra -Wshadow -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wsign-conversion -Wnull-dereference -Wdouble-promotion -Wformat=2 -Wmisleading-indentation -std=gnu++2a -o CMakeFiles/submission.dir/submission/shapes.cpp.o -c \"/home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/student_template_6/submission/shapes.cpp\"",
+  "file": "/home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/student_template_6/submission/shapes.cpp"
+},
+
+{
+  "directory": "/home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/student_template_6/build",
+  "command": "/usr/bin/clang++-13  -Dsubmission_EXPORTS -I../submission -I../include  -g -fPIC   -Wall -Wextra -Wshadow -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wsign-conversion -Wnull-dereference -Wdouble-promotion -Wformat=2 -Wmisleading-indentation -std=gnu++2a -o CMakeFiles/submission.dir/submission/transformations.cpp.o -c \"/home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/student_template_6/submission/transformations.cpp\"",
+  "file": "/home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/student_template_6/submission/transformations.cpp"
+},
+
+{
+  "directory": "/home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/student_template_6/build",
+  "command": "/usr/bin/clang++-13  -Dsubmission_EXPORTS -I../submission -I../include  -g -fPIC   -Wall -Wextra -Wshadow -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wsign-conversion -Wnull-dereference -Wdouble-promotion -Wformat=2 -Wmisleading-indentation -std=gnu++2a -o CMakeFiles/submission.dir/submission/operations.cpp.o -c \"/home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/student_template_6/submission/operations.cpp\"",
+  "file": "/home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/student_template_6/submission/operations.cpp"
+},
+
+{
+  "directory": "/home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/student_template_6/build",
+  "command": "/usr/bin/clang++-13  -Dsubmission_EXPORTS -I../submission -I../include  -g -fPIC   -Wall -Wextra -Wshadow -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wsign-conversion -Wnull-dereference -Wdouble-promotion -Wformat=2 -Wmisleading-indentation -std=gnu++2a -o CMakeFiles/submission.dir/submission/voxel_grid.cpp.o -c \"/home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/student_template_6/submission/voxel_grid.cpp\"",
+  "file": "/home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/student_template_6/submission/voxel_grid.cpp"
+},
+
+{
+  "directory": "/home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/student_template_6/build",
+  "command": "/usr/bin/clang++-13  -Dsubmission_EXPORTS -I../submission -I../include  -g -fPIC   -Wall -Wextra -Wshadow -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wsign-conversion -Wnull-dereference -Wdouble-promotion -Wformat=2 -Wmisleading-indentation -std=gnu++2a -o CMakeFiles/submission.dir/submission/your_shape.cpp.o -c \"/home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/student_template_6/submission/your_shape.cpp\"",
+  "file": "/home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/student_template_6/submission/your_shape.cpp"
+}
+]

@@ -1,0 +1,4 @@
+/home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/rebuild_cache.dir
+/home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/csg.dir
+/home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/submission.dir
+/home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/edit_cache.dir

@@ -1,0 +1,1026 @@
+Detecting CXX OpenMP failed with the following output:
+Change Dir: /home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_46688 && [1/2] Building CXX object CMakeFiles/cmTC_46688.dir/OpenMPTryFlag.cpp.o
+FAILED: CMakeFiles/cmTC_46688.dir/OpenMPTryFlag.cpp.o 
+/usr/bin/clang++-13    -fopenmp=libomp -v -o CMakeFiles/cmTC_46688.dir/OpenMPTryFlag.cpp.o -c '/home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp'
+Ubuntu clang version 13.0.1-++20220120110924+75e33f71c2da-1~exp1~20220120231001.58
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/10
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/9
+Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/10
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+ (in-process)
+ "/usr/lib/llvm-13/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.cpp -mrelocation-model static -mframe-pointer=all -fmath-errno -fno-rounding-math -mconstructor-aliases -munwind-tables -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -v "-fcoverage-compilation-dir=/home/karin/Dokumente/Uni/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/CMakeTmp" -resource-dir /usr/lib/llvm-13/lib/clang/13.0.1 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/x86_64-linux-gnu/c++/10 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10/backward -internal-isystem /usr/lib/llvm-13/lib/clang/13.0.1/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro "-fdebug-compilation-dir=/home/karin/Dokumente/Uni/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/CMakeTmp" -ferror-limit 19 -fopenmp -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_46688.dir/OpenMPTryFlag.cpp.o -x c++ "/home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp"
+clang -cc1 version 13.0.1 based upon LLVM 13.0.1 default target x86_64-pc-linux-gnu
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../x86_64-linux-gnu/include"
+ignoring nonexistent directory "/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/x86_64-linux-gnu/c++/10
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10/backward
+ /usr/lib/llvm-13/lib/clang/13.0.1/include
+ /usr/local/include
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+/home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp:2:10: fatal error: 'omp.h' file not found
+#include <omp.h>
+         ^~~~~~~
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+
+Detecting CXX OpenMP failed with the following output:
+Change Dir: /home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_86fa9 && [1/2] Building CXX object CMakeFiles/cmTC_86fa9.dir/OpenMPTryFlag.cpp.o
+FAILED: CMakeFiles/cmTC_86fa9.dir/OpenMPTryFlag.cpp.o 
+/usr/bin/clang++-13    -fopenmp=libiomp5 -v -o CMakeFiles/cmTC_86fa9.dir/OpenMPTryFlag.cpp.o -c '/home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp'
+Ubuntu clang version 13.0.1-++20220120110924+75e33f71c2da-1~exp1~20220120231001.58
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/10
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/9
+Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/10
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+ (in-process)
+ "/usr/lib/llvm-13/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.cpp -mrelocation-model static -mframe-pointer=all -fmath-errno -fno-rounding-math -mconstructor-aliases -munwind-tables -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -v "-fcoverage-compilation-dir=/home/karin/Dokumente/Uni/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/CMakeTmp" -resource-dir /usr/lib/llvm-13/lib/clang/13.0.1 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/x86_64-linux-gnu/c++/10 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10/backward -internal-isystem /usr/lib/llvm-13/lib/clang/13.0.1/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro "-fdebug-compilation-dir=/home/karin/Dokumente/Uni/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/CMakeTmp" -ferror-limit 19 -fopenmp -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_86fa9.dir/OpenMPTryFlag.cpp.o -x c++ "/home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp"
+clang -cc1 version 13.0.1 based upon LLVM 13.0.1 default target x86_64-pc-linux-gnu
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../x86_64-linux-gnu/include"
+ignoring nonexistent directory "/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/x86_64-linux-gnu/c++/10
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10/backward
+ /usr/lib/llvm-13/lib/clang/13.0.1/include
+ /usr/local/include
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+/home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp:2:10: fatal error: 'omp.h' file not found
+#include <omp.h>
+         ^~~~~~~
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+
+Detecting CXX OpenMP failed with the following output:
+Change Dir: /home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_4912d && [1/2] Building CXX object CMakeFiles/cmTC_4912d.dir/OpenMPTryFlag.cpp.o
+FAILED: CMakeFiles/cmTC_4912d.dir/OpenMPTryFlag.cpp.o 
+/usr/bin/clang++-13    -fopenmp -v -o CMakeFiles/cmTC_4912d.dir/OpenMPTryFlag.cpp.o -c '/home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp'
+Ubuntu clang version 13.0.1-++20220120110924+75e33f71c2da-1~exp1~20220120231001.58
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/10
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/9
+Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/10
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+ (in-process)
+ "/usr/lib/llvm-13/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.cpp -mrelocation-model static -mframe-pointer=all -fmath-errno -fno-rounding-math -mconstructor-aliases -munwind-tables -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -v "-fcoverage-compilation-dir=/home/karin/Dokumente/Uni/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/CMakeTmp" -resource-dir /usr/lib/llvm-13/lib/clang/13.0.1 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/x86_64-linux-gnu/c++/10 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10/backward -internal-isystem /usr/lib/llvm-13/lib/clang/13.0.1/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro "-fdebug-compilation-dir=/home/karin/Dokumente/Uni/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/CMakeTmp" -ferror-limit 19 -fopenmp -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_4912d.dir/OpenMPTryFlag.cpp.o -x c++ "/home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp"
+clang -cc1 version 13.0.1 based upon LLVM 13.0.1 default target x86_64-pc-linux-gnu
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../x86_64-linux-gnu/include"
+ignoring nonexistent directory "/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/x86_64-linux-gnu/c++/10
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10/backward
+ /usr/lib/llvm-13/lib/clang/13.0.1/include
+ /usr/local/include
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+/home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp:2:10: fatal error: 'omp.h' file not found
+#include <omp.h>
+         ^~~~~~~
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+
+Detecting CXX OpenMP failed with the following output:
+Change Dir: /home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_6466b && [1/2] Building CXX object CMakeFiles/cmTC_6466b.dir/OpenMPTryFlag.cpp.o
+FAILED: CMakeFiles/cmTC_6466b.dir/OpenMPTryFlag.cpp.o 
+/usr/bin/clang++-13    -fopenmp=libomp -v -o CMakeFiles/cmTC_6466b.dir/OpenMPTryFlag.cpp.o -c '/home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp'
+Ubuntu clang version 13.0.1-++20220120110924+75e33f71c2da-1~exp1~20220120231001.58
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/10
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/9
+Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/10
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+ (in-process)
+ "/usr/lib/llvm-13/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.cpp -mrelocation-model static -mframe-pointer=all -fmath-errno -fno-rounding-math -mconstructor-aliases -munwind-tables -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -v "-fcoverage-compilation-dir=/home/karin/Dokumente/Uni/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/CMakeTmp" -resource-dir /usr/lib/llvm-13/lib/clang/13.0.1 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/x86_64-linux-gnu/c++/10 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10/backward -internal-isystem /usr/lib/llvm-13/lib/clang/13.0.1/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro "-fdebug-compilation-dir=/home/karin/Dokumente/Uni/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/CMakeTmp" -ferror-limit 19 -fopenmp -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_6466b.dir/OpenMPTryFlag.cpp.o -x c++ "/home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp"
+clang -cc1 version 13.0.1 based upon LLVM 13.0.1 default target x86_64-pc-linux-gnu
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../x86_64-linux-gnu/include"
+ignoring nonexistent directory "/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/x86_64-linux-gnu/c++/10
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10/backward
+ /usr/lib/llvm-13/lib/clang/13.0.1/include
+ /usr/local/include
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+/home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp:2:10: fatal error: 'omp.h' file not found
+#include <omp.h>
+         ^~~~~~~
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+
+Detecting CXX OpenMP failed with the following output:
+Change Dir: /home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_fe14a && [1/2] Building CXX object CMakeFiles/cmTC_fe14a.dir/OpenMPTryFlag.cpp.o
+FAILED: CMakeFiles/cmTC_fe14a.dir/OpenMPTryFlag.cpp.o 
+/usr/bin/clang++-13    -fopenmp=libiomp5 -v -o CMakeFiles/cmTC_fe14a.dir/OpenMPTryFlag.cpp.o -c '/home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp'
+Ubuntu clang version 13.0.1-++20220120110924+75e33f71c2da-1~exp1~20220120231001.58
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/10
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/9
+Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/10
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+ (in-process)
+ "/usr/lib/llvm-13/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.cpp -mrelocation-model static -mframe-pointer=all -fmath-errno -fno-rounding-math -mconstructor-aliases -munwind-tables -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -v "-fcoverage-compilation-dir=/home/karin/Dokumente/Uni/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/CMakeTmp" -resource-dir /usr/lib/llvm-13/lib/clang/13.0.1 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/x86_64-linux-gnu/c++/10 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10/backward -internal-isystem /usr/lib/llvm-13/lib/clang/13.0.1/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro "-fdebug-compilation-dir=/home/karin/Dokumente/Uni/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/CMakeTmp" -ferror-limit 19 -fopenmp -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_fe14a.dir/OpenMPTryFlag.cpp.o -x c++ "/home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp"
+clang -cc1 version 13.0.1 based upon LLVM 13.0.1 default target x86_64-pc-linux-gnu
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../x86_64-linux-gnu/include"
+ignoring nonexistent directory "/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/x86_64-linux-gnu/c++/10
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10/backward
+ /usr/lib/llvm-13/lib/clang/13.0.1/include
+ /usr/local/include
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+/home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp:2:10: fatal error: 'omp.h' file not found
+#include <omp.h>
+         ^~~~~~~
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+
+Detecting CXX OpenMP failed with the following output:
+Change Dir: /home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_5d817 && [1/2] Building CXX object CMakeFiles/cmTC_5d817.dir/OpenMPTryFlag.cpp.o
+FAILED: CMakeFiles/cmTC_5d817.dir/OpenMPTryFlag.cpp.o 
+/usr/bin/clang++-13    -fopenmp -v -o CMakeFiles/cmTC_5d817.dir/OpenMPTryFlag.cpp.o -c '/home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp'
+Ubuntu clang version 13.0.1-++20220120110924+75e33f71c2da-1~exp1~20220120231001.58
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/10
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/9
+Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/10
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+ (in-process)
+ "/usr/lib/llvm-13/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.cpp -mrelocation-model static -mframe-pointer=all -fmath-errno -fno-rounding-math -mconstructor-aliases -munwind-tables -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -v "-fcoverage-compilation-dir=/home/karin/Dokumente/Uni/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/CMakeTmp" -resource-dir /usr/lib/llvm-13/lib/clang/13.0.1 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/x86_64-linux-gnu/c++/10 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10/backward -internal-isystem /usr/lib/llvm-13/lib/clang/13.0.1/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro "-fdebug-compilation-dir=/home/karin/Dokumente/Uni/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/CMakeTmp" -ferror-limit 19 -fopenmp -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_5d817.dir/OpenMPTryFlag.cpp.o -x c++ "/home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp"
+clang -cc1 version 13.0.1 based upon LLVM 13.0.1 default target x86_64-pc-linux-gnu
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../x86_64-linux-gnu/include"
+ignoring nonexistent directory "/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/x86_64-linux-gnu/c++/10
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10/backward
+ /usr/lib/llvm-13/lib/clang/13.0.1/include
+ /usr/local/include
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+/home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp:2:10: fatal error: 'omp.h' file not found
+#include <omp.h>
+         ^~~~~~~
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+
+Detecting CXX OpenMP failed with the following output:
+Change Dir: /home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_91e0e && [1/2] Building CXX object CMakeFiles/cmTC_91e0e.dir/OpenMPTryFlag.cpp.o
+FAILED: CMakeFiles/cmTC_91e0e.dir/OpenMPTryFlag.cpp.o 
+/usr/bin/clang++-13    -fopenmp=libomp -v -o CMakeFiles/cmTC_91e0e.dir/OpenMPTryFlag.cpp.o -c '/home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp'
+Ubuntu clang version 13.0.1-++20220120110924+75e33f71c2da-1~exp1~20220120231001.58
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/10
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/9
+Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/10
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+ (in-process)
+ "/usr/lib/llvm-13/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.cpp -mrelocation-model static -mframe-pointer=all -fmath-errno -fno-rounding-math -mconstructor-aliases -munwind-tables -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -v "-fcoverage-compilation-dir=/home/karin/Dokumente/Uni/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/CMakeTmp" -resource-dir /usr/lib/llvm-13/lib/clang/13.0.1 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/x86_64-linux-gnu/c++/10 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10/backward -internal-isystem /usr/lib/llvm-13/lib/clang/13.0.1/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro "-fdebug-compilation-dir=/home/karin/Dokumente/Uni/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/CMakeTmp" -ferror-limit 19 -fopenmp -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_91e0e.dir/OpenMPTryFlag.cpp.o -x c++ "/home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp"
+clang -cc1 version 13.0.1 based upon LLVM 13.0.1 default target x86_64-pc-linux-gnu
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../x86_64-linux-gnu/include"
+ignoring nonexistent directory "/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/x86_64-linux-gnu/c++/10
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10/backward
+ /usr/lib/llvm-13/lib/clang/13.0.1/include
+ /usr/local/include
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+/home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp:2:10: fatal error: 'omp.h' file not found
+#include <omp.h>
+         ^~~~~~~
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+
+Detecting CXX OpenMP failed with the following output:
+Change Dir: /home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_483bd && [1/2] Building CXX object CMakeFiles/cmTC_483bd.dir/OpenMPTryFlag.cpp.o
+FAILED: CMakeFiles/cmTC_483bd.dir/OpenMPTryFlag.cpp.o 
+/usr/bin/clang++-13    -fopenmp=libiomp5 -v -o CMakeFiles/cmTC_483bd.dir/OpenMPTryFlag.cpp.o -c '/home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp'
+Ubuntu clang version 13.0.1-++20220120110924+75e33f71c2da-1~exp1~20220120231001.58
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/10
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/9
+Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/10
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+ (in-process)
+ "/usr/lib/llvm-13/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.cpp -mrelocation-model static -mframe-pointer=all -fmath-errno -fno-rounding-math -mconstructor-aliases -munwind-tables -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -v "-fcoverage-compilation-dir=/home/karin/Dokumente/Uni/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/CMakeTmp" -resource-dir /usr/lib/llvm-13/lib/clang/13.0.1 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/x86_64-linux-gnu/c++/10 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10/backward -internal-isystem /usr/lib/llvm-13/lib/clang/13.0.1/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro "-fdebug-compilation-dir=/home/karin/Dokumente/Uni/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/CMakeTmp" -ferror-limit 19 -fopenmp -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_483bd.dir/OpenMPTryFlag.cpp.o -x c++ "/home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp"
+clang -cc1 version 13.0.1 based upon LLVM 13.0.1 default target x86_64-pc-linux-gnu
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../x86_64-linux-gnu/include"
+ignoring nonexistent directory "/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/x86_64-linux-gnu/c++/10
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10/backward
+ /usr/lib/llvm-13/lib/clang/13.0.1/include
+ /usr/local/include
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+/home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp:2:10: fatal error: 'omp.h' file not found
+#include <omp.h>
+         ^~~~~~~
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+
+Detecting CXX OpenMP failed with the following output:
+Change Dir: /home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_d2704 && [1/2] Building CXX object CMakeFiles/cmTC_d2704.dir/OpenMPTryFlag.cpp.o
+FAILED: CMakeFiles/cmTC_d2704.dir/OpenMPTryFlag.cpp.o 
+/usr/bin/clang++-13    -fopenmp -v -o CMakeFiles/cmTC_d2704.dir/OpenMPTryFlag.cpp.o -c '/home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp'
+Ubuntu clang version 13.0.1-++20220120110924+75e33f71c2da-1~exp1~20220120231001.58
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/10
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/9
+Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/10
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+ (in-process)
+ "/usr/lib/llvm-13/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.cpp -mrelocation-model static -mframe-pointer=all -fmath-errno -fno-rounding-math -mconstructor-aliases -munwind-tables -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -v "-fcoverage-compilation-dir=/home/karin/Dokumente/Uni/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/CMakeTmp" -resource-dir /usr/lib/llvm-13/lib/clang/13.0.1 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/x86_64-linux-gnu/c++/10 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10/backward -internal-isystem /usr/lib/llvm-13/lib/clang/13.0.1/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro "-fdebug-compilation-dir=/home/karin/Dokumente/Uni/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/CMakeTmp" -ferror-limit 19 -fopenmp -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_d2704.dir/OpenMPTryFlag.cpp.o -x c++ "/home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp"
+clang -cc1 version 13.0.1 based upon LLVM 13.0.1 default target x86_64-pc-linux-gnu
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../x86_64-linux-gnu/include"
+ignoring nonexistent directory "/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/x86_64-linux-gnu/c++/10
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10/backward
+ /usr/lib/llvm-13/lib/clang/13.0.1/include
+ /usr/local/include
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+/home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp:2:10: fatal error: 'omp.h' file not found
+#include <omp.h>
+         ^~~~~~~
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+
+Detecting CXX OpenMP failed with the following output:
+Change Dir: /home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_b1b0b && [1/2] Building CXX object CMakeFiles/cmTC_b1b0b.dir/OpenMPTryFlag.cpp.o
+FAILED: CMakeFiles/cmTC_b1b0b.dir/OpenMPTryFlag.cpp.o 
+/usr/bin/clang++-13    -fopenmp=libomp -v -o CMakeFiles/cmTC_b1b0b.dir/OpenMPTryFlag.cpp.o -c '/home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp'
+Ubuntu clang version 13.0.1-++20220120110924+75e33f71c2da-1~exp1~20220120231001.58
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/10
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/9
+Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/10
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+ (in-process)
+ "/usr/lib/llvm-13/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.cpp -mrelocation-model static -mframe-pointer=all -fmath-errno -fno-rounding-math -mconstructor-aliases -munwind-tables -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -v "-fcoverage-compilation-dir=/home/karin/Dokumente/Uni/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/CMakeTmp" -resource-dir /usr/lib/llvm-13/lib/clang/13.0.1 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/x86_64-linux-gnu/c++/10 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10/backward -internal-isystem /usr/lib/llvm-13/lib/clang/13.0.1/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro "-fdebug-compilation-dir=/home/karin/Dokumente/Uni/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/CMakeTmp" -ferror-limit 19 -fopenmp -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_b1b0b.dir/OpenMPTryFlag.cpp.o -x c++ "/home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp"
+clang -cc1 version 13.0.1 based upon LLVM 13.0.1 default target x86_64-pc-linux-gnu
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../x86_64-linux-gnu/include"
+ignoring nonexistent directory "/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/x86_64-linux-gnu/c++/10
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10/backward
+ /usr/lib/llvm-13/lib/clang/13.0.1/include
+ /usr/local/include
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+/home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp:2:10: fatal error: 'omp.h' file not found
+#include <omp.h>
+         ^~~~~~~
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+
+Detecting CXX OpenMP failed with the following output:
+Change Dir: /home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_fa50a && [1/2] Building CXX object CMakeFiles/cmTC_fa50a.dir/OpenMPTryFlag.cpp.o
+FAILED: CMakeFiles/cmTC_fa50a.dir/OpenMPTryFlag.cpp.o 
+/usr/bin/clang++-13    -fopenmp=libiomp5 -v -o CMakeFiles/cmTC_fa50a.dir/OpenMPTryFlag.cpp.o -c '/home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp'
+Ubuntu clang version 13.0.1-++20220120110924+75e33f71c2da-1~exp1~20220120231001.58
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/10
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/9
+Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/10
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+ (in-process)
+ "/usr/lib/llvm-13/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.cpp -mrelocation-model static -mframe-pointer=all -fmath-errno -fno-rounding-math -mconstructor-aliases -munwind-tables -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -v "-fcoverage-compilation-dir=/home/karin/Dokumente/Uni/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/CMakeTmp" -resource-dir /usr/lib/llvm-13/lib/clang/13.0.1 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/x86_64-linux-gnu/c++/10 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10/backward -internal-isystem /usr/lib/llvm-13/lib/clang/13.0.1/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro "-fdebug-compilation-dir=/home/karin/Dokumente/Uni/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/CMakeTmp" -ferror-limit 19 -fopenmp -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_fa50a.dir/OpenMPTryFlag.cpp.o -x c++ "/home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp"
+clang -cc1 version 13.0.1 based upon LLVM 13.0.1 default target x86_64-pc-linux-gnu
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../x86_64-linux-gnu/include"
+ignoring nonexistent directory "/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/x86_64-linux-gnu/c++/10
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10/backward
+ /usr/lib/llvm-13/lib/clang/13.0.1/include
+ /usr/local/include
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+/home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp:2:10: fatal error: 'omp.h' file not found
+#include <omp.h>
+         ^~~~~~~
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+
+Detecting CXX OpenMP failed with the following output:
+Change Dir: /home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_3ba2b && [1/2] Building CXX object CMakeFiles/cmTC_3ba2b.dir/OpenMPTryFlag.cpp.o
+FAILED: CMakeFiles/cmTC_3ba2b.dir/OpenMPTryFlag.cpp.o 
+/usr/bin/clang++-13    -fopenmp -v -o CMakeFiles/cmTC_3ba2b.dir/OpenMPTryFlag.cpp.o -c '/home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp'
+Ubuntu clang version 13.0.1-++20220120110924+75e33f71c2da-1~exp1~20220120231001.58
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/10
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/9
+Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/10
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+ (in-process)
+ "/usr/lib/llvm-13/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.cpp -mrelocation-model static -mframe-pointer=all -fmath-errno -fno-rounding-math -mconstructor-aliases -munwind-tables -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -v "-fcoverage-compilation-dir=/home/karin/Dokumente/Uni/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/CMakeTmp" -resource-dir /usr/lib/llvm-13/lib/clang/13.0.1 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/x86_64-linux-gnu/c++/10 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10/backward -internal-isystem /usr/lib/llvm-13/lib/clang/13.0.1/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro "-fdebug-compilation-dir=/home/karin/Dokumente/Uni/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/CMakeTmp" -ferror-limit 19 -fopenmp -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_3ba2b.dir/OpenMPTryFlag.cpp.o -x c++ "/home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp"
+clang -cc1 version 13.0.1 based upon LLVM 13.0.1 default target x86_64-pc-linux-gnu
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../x86_64-linux-gnu/include"
+ignoring nonexistent directory "/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/x86_64-linux-gnu/c++/10
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10/backward
+ /usr/lib/llvm-13/lib/clang/13.0.1/include
+ /usr/local/include
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+/home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp:2:10: fatal error: 'omp.h' file not found
+#include <omp.h>
+         ^~~~~~~
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+
+Detecting CXX OpenMP failed with the following output:
+Change Dir: /home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_81d77 && [1/2] Building CXX object CMakeFiles/cmTC_81d77.dir/OpenMPTryFlag.cpp.o
+FAILED: CMakeFiles/cmTC_81d77.dir/OpenMPTryFlag.cpp.o 
+/usr/bin/clang++-13    -fopenmp=libomp -v -o CMakeFiles/cmTC_81d77.dir/OpenMPTryFlag.cpp.o -c '/home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp'
+Ubuntu clang version 13.0.1-++20220120110924+75e33f71c2da-1~exp1~20220120231001.58
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/10
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/9
+Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/10
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+ (in-process)
+ "/usr/lib/llvm-13/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.cpp -mrelocation-model static -mframe-pointer=all -fmath-errno -fno-rounding-math -mconstructor-aliases -munwind-tables -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -v "-fcoverage-compilation-dir=/home/karin/Dokumente/Uni/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/CMakeTmp" -resource-dir /usr/lib/llvm-13/lib/clang/13.0.1 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/x86_64-linux-gnu/c++/10 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10/backward -internal-isystem /usr/lib/llvm-13/lib/clang/13.0.1/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro "-fdebug-compilation-dir=/home/karin/Dokumente/Uni/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/CMakeTmp" -ferror-limit 19 -fopenmp -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_81d77.dir/OpenMPTryFlag.cpp.o -x c++ "/home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp"
+clang -cc1 version 13.0.1 based upon LLVM 13.0.1 default target x86_64-pc-linux-gnu
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../x86_64-linux-gnu/include"
+ignoring nonexistent directory "/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/x86_64-linux-gnu/c++/10
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10/backward
+ /usr/lib/llvm-13/lib/clang/13.0.1/include
+ /usr/local/include
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+/home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp:2:10: fatal error: 'omp.h' file not found
+#include <omp.h>
+         ^~~~~~~
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+
+Detecting CXX OpenMP failed with the following output:
+Change Dir: /home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_1ac1b && [1/2] Building CXX object CMakeFiles/cmTC_1ac1b.dir/OpenMPTryFlag.cpp.o
+FAILED: CMakeFiles/cmTC_1ac1b.dir/OpenMPTryFlag.cpp.o 
+/usr/bin/clang++-13    -fopenmp=libiomp5 -v -o CMakeFiles/cmTC_1ac1b.dir/OpenMPTryFlag.cpp.o -c '/home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp'
+Ubuntu clang version 13.0.1-++20220120110924+75e33f71c2da-1~exp1~20220120231001.58
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/10
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/9
+Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/10
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+ (in-process)
+ "/usr/lib/llvm-13/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.cpp -mrelocation-model static -mframe-pointer=all -fmath-errno -fno-rounding-math -mconstructor-aliases -munwind-tables -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -v "-fcoverage-compilation-dir=/home/karin/Dokumente/Uni/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/CMakeTmp" -resource-dir /usr/lib/llvm-13/lib/clang/13.0.1 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/x86_64-linux-gnu/c++/10 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10/backward -internal-isystem /usr/lib/llvm-13/lib/clang/13.0.1/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro "-fdebug-compilation-dir=/home/karin/Dokumente/Uni/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/CMakeTmp" -ferror-limit 19 -fopenmp -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_1ac1b.dir/OpenMPTryFlag.cpp.o -x c++ "/home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp"
+clang -cc1 version 13.0.1 based upon LLVM 13.0.1 default target x86_64-pc-linux-gnu
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../x86_64-linux-gnu/include"
+ignoring nonexistent directory "/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/x86_64-linux-gnu/c++/10
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10/backward
+ /usr/lib/llvm-13/lib/clang/13.0.1/include
+ /usr/local/include
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+/home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp:2:10: fatal error: 'omp.h' file not found
+#include <omp.h>
+         ^~~~~~~
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+
+Detecting CXX OpenMP failed with the following output:
+Change Dir: /home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_64167 && [1/2] Building CXX object CMakeFiles/cmTC_64167.dir/OpenMPTryFlag.cpp.o
+FAILED: CMakeFiles/cmTC_64167.dir/OpenMPTryFlag.cpp.o 
+/usr/bin/clang++-13    -fopenmp -v -o CMakeFiles/cmTC_64167.dir/OpenMPTryFlag.cpp.o -c '/home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp'
+Ubuntu clang version 13.0.1-++20220120110924+75e33f71c2da-1~exp1~20220120231001.58
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/10
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/9
+Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/10
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+ (in-process)
+ "/usr/lib/llvm-13/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.cpp -mrelocation-model static -mframe-pointer=all -fmath-errno -fno-rounding-math -mconstructor-aliases -munwind-tables -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -v "-fcoverage-compilation-dir=/home/karin/Dokumente/Uni/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/CMakeTmp" -resource-dir /usr/lib/llvm-13/lib/clang/13.0.1 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/x86_64-linux-gnu/c++/10 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10/backward -internal-isystem /usr/lib/llvm-13/lib/clang/13.0.1/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro "-fdebug-compilation-dir=/home/karin/Dokumente/Uni/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/CMakeTmp" -ferror-limit 19 -fopenmp -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_64167.dir/OpenMPTryFlag.cpp.o -x c++ "/home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp"
+clang -cc1 version 13.0.1 based upon LLVM 13.0.1 default target x86_64-pc-linux-gnu
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../x86_64-linux-gnu/include"
+ignoring nonexistent directory "/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/x86_64-linux-gnu/c++/10
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10/backward
+ /usr/lib/llvm-13/lib/clang/13.0.1/include
+ /usr/local/include
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+/home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp:2:10: fatal error: 'omp.h' file not found
+#include <omp.h>
+         ^~~~~~~
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+
+Detecting CXX OpenMP failed with the following output:
+Change Dir: /home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_fb777 && [1/2] Building CXX object CMakeFiles/cmTC_fb777.dir/OpenMPTryFlag.cpp.o
+FAILED: CMakeFiles/cmTC_fb777.dir/OpenMPTryFlag.cpp.o 
+/usr/bin/clang++-13    -fopenmp=libomp -v -o CMakeFiles/cmTC_fb777.dir/OpenMPTryFlag.cpp.o -c '/home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp'
+Ubuntu clang version 13.0.1-++20220120110924+75e33f71c2da-1~exp1~20220120231001.58
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/10
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/9
+Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/10
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+ (in-process)
+ "/usr/lib/llvm-13/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.cpp -mrelocation-model static -mframe-pointer=all -fmath-errno -fno-rounding-math -mconstructor-aliases -munwind-tables -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -v "-fcoverage-compilation-dir=/home/karin/Dokumente/Uni/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/CMakeTmp" -resource-dir /usr/lib/llvm-13/lib/clang/13.0.1 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/x86_64-linux-gnu/c++/10 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10/backward -internal-isystem /usr/lib/llvm-13/lib/clang/13.0.1/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro "-fdebug-compilation-dir=/home/karin/Dokumente/Uni/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/CMakeTmp" -ferror-limit 19 -fopenmp -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_fb777.dir/OpenMPTryFlag.cpp.o -x c++ "/home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp"
+clang -cc1 version 13.0.1 based upon LLVM 13.0.1 default target x86_64-pc-linux-gnu
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../x86_64-linux-gnu/include"
+ignoring nonexistent directory "/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/x86_64-linux-gnu/c++/10
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10/backward
+ /usr/lib/llvm-13/lib/clang/13.0.1/include
+ /usr/local/include
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+/home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp:2:10: fatal error: 'omp.h' file not found
+#include <omp.h>
+         ^~~~~~~
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+
+Detecting CXX OpenMP failed with the following output:
+Change Dir: /home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_0e379 && [1/2] Building CXX object CMakeFiles/cmTC_0e379.dir/OpenMPTryFlag.cpp.o
+FAILED: CMakeFiles/cmTC_0e379.dir/OpenMPTryFlag.cpp.o 
+/usr/bin/clang++-13    -fopenmp=libiomp5 -v -o CMakeFiles/cmTC_0e379.dir/OpenMPTryFlag.cpp.o -c '/home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp'
+Ubuntu clang version 13.0.1-++20220120110924+75e33f71c2da-1~exp1~20220120231001.58
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/10
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/9
+Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/10
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+ (in-process)
+ "/usr/lib/llvm-13/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.cpp -mrelocation-model static -mframe-pointer=all -fmath-errno -fno-rounding-math -mconstructor-aliases -munwind-tables -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -v "-fcoverage-compilation-dir=/home/karin/Dokumente/Uni/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/CMakeTmp" -resource-dir /usr/lib/llvm-13/lib/clang/13.0.1 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/x86_64-linux-gnu/c++/10 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10/backward -internal-isystem /usr/lib/llvm-13/lib/clang/13.0.1/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro "-fdebug-compilation-dir=/home/karin/Dokumente/Uni/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/CMakeTmp" -ferror-limit 19 -fopenmp -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_0e379.dir/OpenMPTryFlag.cpp.o -x c++ "/home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp"
+clang -cc1 version 13.0.1 based upon LLVM 13.0.1 default target x86_64-pc-linux-gnu
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../x86_64-linux-gnu/include"
+ignoring nonexistent directory "/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/x86_64-linux-gnu/c++/10
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10/backward
+ /usr/lib/llvm-13/lib/clang/13.0.1/include
+ /usr/local/include
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+/home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp:2:10: fatal error: 'omp.h' file not found
+#include <omp.h>
+         ^~~~~~~
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+
+Detecting CXX OpenMP failed with the following output:
+Change Dir: /home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_a6a66 && [1/2] Building CXX object CMakeFiles/cmTC_a6a66.dir/OpenMPTryFlag.cpp.o
+FAILED: CMakeFiles/cmTC_a6a66.dir/OpenMPTryFlag.cpp.o 
+/usr/bin/clang++-13    -fopenmp -v -o CMakeFiles/cmTC_a6a66.dir/OpenMPTryFlag.cpp.o -c '/home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp'
+Ubuntu clang version 13.0.1-++20220120110924+75e33f71c2da-1~exp1~20220120231001.58
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/10
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/9
+Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/10
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+ (in-process)
+ "/usr/lib/llvm-13/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.cpp -mrelocation-model static -mframe-pointer=all -fmath-errno -fno-rounding-math -mconstructor-aliases -munwind-tables -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -v "-fcoverage-compilation-dir=/home/karin/Dokumente/Uni/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/CMakeTmp" -resource-dir /usr/lib/llvm-13/lib/clang/13.0.1 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/x86_64-linux-gnu/c++/10 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10/backward -internal-isystem /usr/lib/llvm-13/lib/clang/13.0.1/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro "-fdebug-compilation-dir=/home/karin/Dokumente/Uni/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/CMakeTmp" -ferror-limit 19 -fopenmp -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_a6a66.dir/OpenMPTryFlag.cpp.o -x c++ "/home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp"
+clang -cc1 version 13.0.1 based upon LLVM 13.0.1 default target x86_64-pc-linux-gnu
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../x86_64-linux-gnu/include"
+ignoring nonexistent directory "/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/x86_64-linux-gnu/c++/10
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10/backward
+ /usr/lib/llvm-13/lib/clang/13.0.1/include
+ /usr/local/include
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+/home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp:2:10: fatal error: 'omp.h' file not found
+#include <omp.h>
+         ^~~~~~~
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+
+Detecting CXX OpenMP failed with the following output:
+Change Dir: /home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_dfad4 && [1/2] Building CXX object CMakeFiles/cmTC_dfad4.dir/OpenMPTryFlag.cpp.o
+FAILED: CMakeFiles/cmTC_dfad4.dir/OpenMPTryFlag.cpp.o 
+/usr/bin/clang++-13    -fopenmp=libomp -v -o CMakeFiles/cmTC_dfad4.dir/OpenMPTryFlag.cpp.o -c '/home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp'
+Ubuntu clang version 13.0.1-++20220120110924+75e33f71c2da-1~exp1~20220120231001.58
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/10
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/9
+Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/10
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+ (in-process)
+ "/usr/lib/llvm-13/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.cpp -mrelocation-model static -mframe-pointer=all -fmath-errno -fno-rounding-math -mconstructor-aliases -munwind-tables -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -v "-fcoverage-compilation-dir=/home/karin/Dokumente/Uni/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/CMakeTmp" -resource-dir /usr/lib/llvm-13/lib/clang/13.0.1 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/x86_64-linux-gnu/c++/10 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10/backward -internal-isystem /usr/lib/llvm-13/lib/clang/13.0.1/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro "-fdebug-compilation-dir=/home/karin/Dokumente/Uni/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/CMakeTmp" -ferror-limit 19 -fopenmp -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_dfad4.dir/OpenMPTryFlag.cpp.o -x c++ "/home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp"
+clang -cc1 version 13.0.1 based upon LLVM 13.0.1 default target x86_64-pc-linux-gnu
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../x86_64-linux-gnu/include"
+ignoring nonexistent directory "/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/x86_64-linux-gnu/c++/10
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10/backward
+ /usr/lib/llvm-13/lib/clang/13.0.1/include
+ /usr/local/include
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+/home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp:2:10: fatal error: 'omp.h' file not found
+#include <omp.h>
+         ^~~~~~~
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+
+Detecting CXX OpenMP failed with the following output:
+Change Dir: /home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_f096f && [1/2] Building CXX object CMakeFiles/cmTC_f096f.dir/OpenMPTryFlag.cpp.o
+FAILED: CMakeFiles/cmTC_f096f.dir/OpenMPTryFlag.cpp.o 
+/usr/bin/clang++-13    -fopenmp=libiomp5 -v -o CMakeFiles/cmTC_f096f.dir/OpenMPTryFlag.cpp.o -c '/home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp'
+Ubuntu clang version 13.0.1-++20220120110924+75e33f71c2da-1~exp1~20220120231001.58
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/10
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/9
+Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/10
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+ (in-process)
+ "/usr/lib/llvm-13/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.cpp -mrelocation-model static -mframe-pointer=all -fmath-errno -fno-rounding-math -mconstructor-aliases -munwind-tables -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -v "-fcoverage-compilation-dir=/home/karin/Dokumente/Uni/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/CMakeTmp" -resource-dir /usr/lib/llvm-13/lib/clang/13.0.1 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/x86_64-linux-gnu/c++/10 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10/backward -internal-isystem /usr/lib/llvm-13/lib/clang/13.0.1/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro "-fdebug-compilation-dir=/home/karin/Dokumente/Uni/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/CMakeTmp" -ferror-limit 19 -fopenmp -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_f096f.dir/OpenMPTryFlag.cpp.o -x c++ "/home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp"
+clang -cc1 version 13.0.1 based upon LLVM 13.0.1 default target x86_64-pc-linux-gnu
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../x86_64-linux-gnu/include"
+ignoring nonexistent directory "/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/x86_64-linux-gnu/c++/10
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10/backward
+ /usr/lib/llvm-13/lib/clang/13.0.1/include
+ /usr/local/include
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+/home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp:2:10: fatal error: 'omp.h' file not found
+#include <omp.h>
+         ^~~~~~~
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+
+Detecting CXX OpenMP failed with the following output:
+Change Dir: /home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_463da && [1/2] Building CXX object CMakeFiles/cmTC_463da.dir/OpenMPTryFlag.cpp.o
+FAILED: CMakeFiles/cmTC_463da.dir/OpenMPTryFlag.cpp.o 
+/usr/bin/clang++-13    -fopenmp -v -o CMakeFiles/cmTC_463da.dir/OpenMPTryFlag.cpp.o -c '/home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp'
+Ubuntu clang version 13.0.1-++20220120110924+75e33f71c2da-1~exp1~20220120231001.58
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/10
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/9
+Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/10
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+ (in-process)
+ "/usr/lib/llvm-13/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.cpp -mrelocation-model static -mframe-pointer=all -fmath-errno -fno-rounding-math -mconstructor-aliases -munwind-tables -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -v "-fcoverage-compilation-dir=/home/karin/Dokumente/Uni/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/CMakeTmp" -resource-dir /usr/lib/llvm-13/lib/clang/13.0.1 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/x86_64-linux-gnu/c++/10 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10/backward -internal-isystem /usr/lib/llvm-13/lib/clang/13.0.1/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro "-fdebug-compilation-dir=/home/karin/Dokumente/Uni/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/CMakeTmp" -ferror-limit 19 -fopenmp -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_463da.dir/OpenMPTryFlag.cpp.o -x c++ "/home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp"
+clang -cc1 version 13.0.1 based upon LLVM 13.0.1 default target x86_64-pc-linux-gnu
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../x86_64-linux-gnu/include"
+ignoring nonexistent directory "/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/x86_64-linux-gnu/c++/10
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10/backward
+ /usr/lib/llvm-13/lib/clang/13.0.1/include
+ /usr/local/include
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+/home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp:2:10: fatal error: 'omp.h' file not found
+#include <omp.h>
+         ^~~~~~~
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+
+Detecting CXX OpenMP failed with the following output:
+Change Dir: /home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_b5279 && [1/2] Building CXX object CMakeFiles/cmTC_b5279.dir/OpenMPTryFlag.cpp.o
+FAILED: CMakeFiles/cmTC_b5279.dir/OpenMPTryFlag.cpp.o 
+/usr/bin/clang++-13    -fopenmp=libomp -v -o CMakeFiles/cmTC_b5279.dir/OpenMPTryFlag.cpp.o -c '/home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp'
+Ubuntu clang version 13.0.1-++20220120110924+75e33f71c2da-1~exp1~20220120231001.58
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/10
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/9
+Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/10
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+ (in-process)
+ "/usr/lib/llvm-13/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.cpp -mrelocation-model static -mframe-pointer=all -fmath-errno -fno-rounding-math -mconstructor-aliases -munwind-tables -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -v "-fcoverage-compilation-dir=/home/karin/Dokumente/Uni/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/CMakeTmp" -resource-dir /usr/lib/llvm-13/lib/clang/13.0.1 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/x86_64-linux-gnu/c++/10 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10/backward -internal-isystem /usr/lib/llvm-13/lib/clang/13.0.1/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro "-fdebug-compilation-dir=/home/karin/Dokumente/Uni/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/CMakeTmp" -ferror-limit 19 -fopenmp -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_b5279.dir/OpenMPTryFlag.cpp.o -x c++ "/home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp"
+clang -cc1 version 13.0.1 based upon LLVM 13.0.1 default target x86_64-pc-linux-gnu
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../x86_64-linux-gnu/include"
+ignoring nonexistent directory "/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/x86_64-linux-gnu/c++/10
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10/backward
+ /usr/lib/llvm-13/lib/clang/13.0.1/include
+ /usr/local/include
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+/home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp:2:10: fatal error: 'omp.h' file not found
+#include <omp.h>
+         ^~~~~~~
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+
+Detecting CXX OpenMP failed with the following output:
+Change Dir: /home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_b2f81 && [1/2] Building CXX object CMakeFiles/cmTC_b2f81.dir/OpenMPTryFlag.cpp.o
+FAILED: CMakeFiles/cmTC_b2f81.dir/OpenMPTryFlag.cpp.o 
+/usr/bin/clang++-13    -fopenmp=libiomp5 -v -o CMakeFiles/cmTC_b2f81.dir/OpenMPTryFlag.cpp.o -c '/home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp'
+Ubuntu clang version 13.0.1-++20220120110924+75e33f71c2da-1~exp1~20220120231001.58
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/10
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/9
+Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/10
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+ (in-process)
+ "/usr/lib/llvm-13/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.cpp -mrelocation-model static -mframe-pointer=all -fmath-errno -fno-rounding-math -mconstructor-aliases -munwind-tables -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -v "-fcoverage-compilation-dir=/home/karin/Dokumente/Uni/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/CMakeTmp" -resource-dir /usr/lib/llvm-13/lib/clang/13.0.1 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/x86_64-linux-gnu/c++/10 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10/backward -internal-isystem /usr/lib/llvm-13/lib/clang/13.0.1/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro "-fdebug-compilation-dir=/home/karin/Dokumente/Uni/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/CMakeTmp" -ferror-limit 19 -fopenmp -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_b2f81.dir/OpenMPTryFlag.cpp.o -x c++ "/home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp"
+clang -cc1 version 13.0.1 based upon LLVM 13.0.1 default target x86_64-pc-linux-gnu
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../x86_64-linux-gnu/include"
+ignoring nonexistent directory "/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/x86_64-linux-gnu/c++/10
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10/backward
+ /usr/lib/llvm-13/lib/clang/13.0.1/include
+ /usr/local/include
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+/home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp:2:10: fatal error: 'omp.h' file not found
+#include <omp.h>
+         ^~~~~~~
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+
+Detecting CXX OpenMP failed with the following output:
+Change Dir: /home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_fc81c && [1/2] Building CXX object CMakeFiles/cmTC_fc81c.dir/OpenMPTryFlag.cpp.o
+FAILED: CMakeFiles/cmTC_fc81c.dir/OpenMPTryFlag.cpp.o 
+/usr/bin/clang++-13    -fopenmp -v -o CMakeFiles/cmTC_fc81c.dir/OpenMPTryFlag.cpp.o -c '/home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp'
+Ubuntu clang version 13.0.1-++20220120110924+75e33f71c2da-1~exp1~20220120231001.58
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/10
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/9
+Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/10
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+ (in-process)
+ "/usr/lib/llvm-13/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.cpp -mrelocation-model static -mframe-pointer=all -fmath-errno -fno-rounding-math -mconstructor-aliases -munwind-tables -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -v "-fcoverage-compilation-dir=/home/karin/Dokumente/Uni/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/CMakeTmp" -resource-dir /usr/lib/llvm-13/lib/clang/13.0.1 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/x86_64-linux-gnu/c++/10 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10/backward -internal-isystem /usr/lib/llvm-13/lib/clang/13.0.1/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro "-fdebug-compilation-dir=/home/karin/Dokumente/Uni/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/CMakeTmp" -ferror-limit 19 -fopenmp -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_fc81c.dir/OpenMPTryFlag.cpp.o -x c++ "/home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp"
+clang -cc1 version 13.0.1 based upon LLVM 13.0.1 default target x86_64-pc-linux-gnu
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../x86_64-linux-gnu/include"
+ignoring nonexistent directory "/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/x86_64-linux-gnu/c++/10
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10/backward
+ /usr/lib/llvm-13/lib/clang/13.0.1/include
+ /usr/local/include
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+/home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp:2:10: fatal error: 'omp.h' file not found
+#include <omp.h>
+         ^~~~~~~
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+
+Detecting CXX OpenMP failed with the following output:
+Change Dir: /home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_126e9 && [1/2] Building CXX object CMakeFiles/cmTC_126e9.dir/OpenMPTryFlag.cpp.o
+FAILED: CMakeFiles/cmTC_126e9.dir/OpenMPTryFlag.cpp.o 
+/usr/bin/clang++-13    -fopenmp=libomp -v -o CMakeFiles/cmTC_126e9.dir/OpenMPTryFlag.cpp.o -c '/home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp'
+Ubuntu clang version 13.0.1-++20220120110924+75e33f71c2da-1~exp1~20220120231001.58
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/10
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/9
+Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/10
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+ (in-process)
+ "/usr/lib/llvm-13/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.cpp -mrelocation-model static -mframe-pointer=all -fmath-errno -fno-rounding-math -mconstructor-aliases -munwind-tables -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -v "-fcoverage-compilation-dir=/home/karin/Dokumente/Uni/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/CMakeTmp" -resource-dir /usr/lib/llvm-13/lib/clang/13.0.1 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/x86_64-linux-gnu/c++/10 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10/backward -internal-isystem /usr/lib/llvm-13/lib/clang/13.0.1/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro "-fdebug-compilation-dir=/home/karin/Dokumente/Uni/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/CMakeTmp" -ferror-limit 19 -fopenmp -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_126e9.dir/OpenMPTryFlag.cpp.o -x c++ "/home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp"
+clang -cc1 version 13.0.1 based upon LLVM 13.0.1 default target x86_64-pc-linux-gnu
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../x86_64-linux-gnu/include"
+ignoring nonexistent directory "/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/x86_64-linux-gnu/c++/10
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10/backward
+ /usr/lib/llvm-13/lib/clang/13.0.1/include
+ /usr/local/include
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+/home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp:2:10: fatal error: 'omp.h' file not found
+#include <omp.h>
+         ^~~~~~~
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+
+Detecting CXX OpenMP failed with the following output:
+Change Dir: /home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_e340f && [1/2] Building CXX object CMakeFiles/cmTC_e340f.dir/OpenMPTryFlag.cpp.o
+FAILED: CMakeFiles/cmTC_e340f.dir/OpenMPTryFlag.cpp.o 
+/usr/bin/clang++-13    -fopenmp=libiomp5 -v -o CMakeFiles/cmTC_e340f.dir/OpenMPTryFlag.cpp.o -c '/home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp'
+Ubuntu clang version 13.0.1-++20220120110924+75e33f71c2da-1~exp1~20220120231001.58
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/10
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/9
+Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/10
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+ (in-process)
+ "/usr/lib/llvm-13/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.cpp -mrelocation-model static -mframe-pointer=all -fmath-errno -fno-rounding-math -mconstructor-aliases -munwind-tables -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -v "-fcoverage-compilation-dir=/home/karin/Dokumente/Uni/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/CMakeTmp" -resource-dir /usr/lib/llvm-13/lib/clang/13.0.1 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/x86_64-linux-gnu/c++/10 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10/backward -internal-isystem /usr/lib/llvm-13/lib/clang/13.0.1/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro "-fdebug-compilation-dir=/home/karin/Dokumente/Uni/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/CMakeTmp" -ferror-limit 19 -fopenmp -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_e340f.dir/OpenMPTryFlag.cpp.o -x c++ "/home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp"
+clang -cc1 version 13.0.1 based upon LLVM 13.0.1 default target x86_64-pc-linux-gnu
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../x86_64-linux-gnu/include"
+ignoring nonexistent directory "/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/x86_64-linux-gnu/c++/10
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10/backward
+ /usr/lib/llvm-13/lib/clang/13.0.1/include
+ /usr/local/include
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+/home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp:2:10: fatal error: 'omp.h' file not found
+#include <omp.h>
+         ^~~~~~~
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+
+Detecting CXX OpenMP failed with the following output:
+Change Dir: /home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_b7305 && [1/2] Building CXX object CMakeFiles/cmTC_b7305.dir/OpenMPTryFlag.cpp.o
+FAILED: CMakeFiles/cmTC_b7305.dir/OpenMPTryFlag.cpp.o 
+/usr/bin/clang++-13    -fopenmp -v -o CMakeFiles/cmTC_b7305.dir/OpenMPTryFlag.cpp.o -c '/home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp'
+Ubuntu clang version 13.0.1-++20220120110924+75e33f71c2da-1~exp1~20220120231001.58
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/10
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/9
+Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/10
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+ (in-process)
+ "/usr/lib/llvm-13/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.cpp -mrelocation-model static -mframe-pointer=all -fmath-errno -fno-rounding-math -mconstructor-aliases -munwind-tables -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -v "-fcoverage-compilation-dir=/home/karin/Dokumente/Uni/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/CMakeTmp" -resource-dir /usr/lib/llvm-13/lib/clang/13.0.1 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/x86_64-linux-gnu/c++/10 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10/backward -internal-isystem /usr/lib/llvm-13/lib/clang/13.0.1/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro "-fdebug-compilation-dir=/home/karin/Dokumente/Uni/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/CMakeTmp" -ferror-limit 19 -fopenmp -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_b7305.dir/OpenMPTryFlag.cpp.o -x c++ "/home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp"
+clang -cc1 version 13.0.1 based upon LLVM 13.0.1 default target x86_64-pc-linux-gnu
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../x86_64-linux-gnu/include"
+ignoring nonexistent directory "/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/x86_64-linux-gnu/c++/10
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10/backward
+ /usr/lib/llvm-13/lib/clang/13.0.1/include
+ /usr/local/include
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+/home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp:2:10: fatal error: 'omp.h' file not found
+#include <omp.h>
+         ^~~~~~~
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+
