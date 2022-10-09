@@ -1,5 +1,6 @@
 #pragma once
 
+#include "point3d.h"
 #include "shapes.h"
 
 #include <memory>
@@ -18,9 +19,11 @@ public:
 class Scaled : public Transformation {
     public:
         Point3D s;
+
         Shape clone_impl() const override;
         AABB getBounds_impl() const override;
         bool isInside_impl(const Point3D& p) const override;
+
         Scaled(const Shape& shape, const Point3D& s);
 };
 
@@ -28,12 +31,12 @@ class Translated : public Transformation {
     public:
         Point3D t;
 
-        Translated(const Shape& shape, const Point3D& s);
         Shape clone_impl() const override;
         AABB getBounds_impl() const override;
         bool isInside_impl(const Point3D& p) const override;
-};
 
+        Translated(const Shape& shape, const Point3D& s);
+};
 class Rotated : public Transformation {
     public:
         float angle;

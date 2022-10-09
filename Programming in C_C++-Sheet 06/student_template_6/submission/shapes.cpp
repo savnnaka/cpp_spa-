@@ -3,8 +3,6 @@
 #include "transformations.h"
 #include "operations.h"
 
-#include <math.h>
-#include <memory>
 #include <stdexcept>
 
 Shape::Shape(std::shared_ptr<Shape>&& shape) noexcept
@@ -78,83 +76,39 @@ AABB Empty::getBounds_impl() const
 
 Shape Cube::clone_impl() const
 {
-    std::shared_ptr<Shape> shapeptr = std::make_shared<Cube>();
-    return shapeptr;
+    return {std::make_shared<Cube>()};
 }
 
 bool Cube::isInside_impl(const Point3D& p) const {
     return getBounds().contains(p);
 }
 
-Shape Sphere::clone_impl() const
-{
-    return {std::make_shared<Sphere>()}; //!!
+Shape Sphere::clone_impl() const{
+    return {std::make_shared<Sphere>()};
 }
 
-bool Sphere::isInside_impl(const Point3D& p) const 
-{
-    float innerSum = powf(p.x, 2.0f) + powf(p.y, 2) + powf(p.z, 2);
+bool Sphere::isInside_impl(const Point3D& p) const{
+    double innerSum = pow(static_cast<double>(p.x),2) + 
+                        pow(static_cast<double>(p.y),2) + pow(static_cast<double>(p.z),2);
     return pow(innerSum, 0.5) <= 1;
 }
 
-Shape Cylinder::clone_impl() const
-{
-    return {std::make_shared<Cylinder>()}; //??
+Shape Cylinder::clone_impl() const{
+    return {std::make_shared<Cylinder>()};
 }
 
-bool Cylinder::isInside_impl(const Point3D& p) const 
-{
-    float innerSum = powf(p.x, 2) + powf(p.y, 2);
+bool Cylinder::isInside_impl(const Point3D& p) const{
+    float innerSum = powf(p.x,2) + powf(p.y,2);
     float squareRoot = powf(innerSum, 0.5);
 
     return (squareRoot <= 1.0f) && (-1.0f <= p.z) && (p.z <= 1.0f);
 }
 
-Shape Octahedron::clone_impl() const
-{
-    //Shape* oc = new Octahedron(*this);
-    return {std::make_shared<Octahedron>()}; //??
+Shape Octahedron::clone_impl() const{
+    return {std::make_shared<Octahedron>()};
 }
 
-bool Octahedron::isInside_impl(const Point3D& p) const 
-{   // sum of absolutes smaller 1
-    return (abs(p.x) + abs(p.y) + abs(p.z)) <= 1.0f;
+bool Octahedron::isInside_impl(const Point3D& p) const{
+    return abs(static_cast<int>(p.x)) + abs(static_cast<int>(p.y)) + abs(static_cast<int>(p.z)) <= 1;
 }
 
-  // operators
-Shape Shape::operator&(const Shape& other) const
-{ //and
-    // sub shape und isInside_impl() define new shape
-    // and objekt erstellen
-    And neu = And(*this, other);
-    // return a Shape clone, not an AND
-    return neu.clone_impl();
-};
-
-// or
-Shape Shape::operator|(const Shape& other) const{
-    Or neu = Or(*this, other);
-    return neu.clone_impl();
-};
-
-Shape Shape::operator^(const Shape& other) const
-{
-    Xor neu = Xor(*this, other);
-    return neu.clone_impl();
-
-};
-Shape Shape::operator!() const
-{ //not
-    Not neu = Not(*this);
-    return neu.clone_impl();
-};
-
-Shape Shape::operator+(const Shape& other) const
-{
-    return Shape::operator^(other).Shape::operator|(Shape::operator&(other));
-};
-
-Shape Shape::operator-(const Shape& other) const
-{
-    return Shape::operator&(other.Shape::operator!());
-};

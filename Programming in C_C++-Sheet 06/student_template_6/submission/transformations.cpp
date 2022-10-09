@@ -1,4 +1,5 @@
 #include "transformations.h"
+#include "point3d.h"
 #include <cmath>
 
 // helper function for 2D rotations
@@ -12,22 +13,26 @@ std::pair<float, float> rotate2D(float x, float y, float angle)
 
 
 Transformation::Transformation(const Shape& shape)
-    : sub_shape{shape.clone()}{};
+    : sub_shape{shape.clone()}
+{
 
-// Scaled derives from Transformation, which derives from Shape
-Scaled::Scaled(const Shape& shape, const Point3D& s_)
-    :Transformation(shape){
-        this->s = s_;
-    }
+}
+
+//Scaled 
+Scaled::Scaled(const Shape& shape, const Point3D& s_):Transformation(shape)
+{
+    s = s_;
+}
 
 Shape Scaled::clone_impl() const{
     return {std::make_shared<Scaled>(this->sub_shape, this->s)};
 }
 
 AABB Scaled::getBounds_impl() const {
-    this->getBounds().min = this->getBounds().min * this->s;
-    this->getBounds().max = this->getBounds().max * this->s;
-    return this->getBounds();
+    AABB bounds = this->getBounds();
+    bounds.min *= this->s;
+    bounds.max *= this->s;
+    return bounds;
 }
 
 bool Scaled::isInside_impl(const Point3D& p) const {
@@ -41,7 +46,8 @@ Shape Shape::scaled(Point3D factor) const{
 
 //Translated
 Translated::Translated(const Shape& shape, const Point3D& t_)
-    :Transformation(shape){
+    :Transformation(shape)
+    {
         t = t_;
     }
 
@@ -50,10 +56,8 @@ Shape Translated::clone_impl() const{
 }
 
 AABB Translated::getBounds_impl() const {
-    //this->getBounds().min.operator+=(this->t);
-    //this->getBounds().max.operator+=(this->t);
-    this->getBounds().min += this->t;
-    this->getBounds().max += this->t;
+    this->getBounds().min =this->getBounds().min + this->t;
+    this->getBounds().max = this->getBounds().max + this->t;
     return this->getBounds();
 }
 
@@ -68,9 +72,10 @@ Shape Shape::translated(Point3D offset) const {
 
 //Rotation
 Rotated::Rotated(const Shape& shape, const Axis& axis_, const float& angle_)
-    :Transformation(shape){
+    :Transformation(shape)
+    {
+        angle = angle_; 
         axis = axis_;
-        angle = angle_;
     }
 
 Shape Rotated::clone_impl() const{

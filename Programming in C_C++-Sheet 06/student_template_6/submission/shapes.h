@@ -9,7 +9,7 @@
 class Shape {
 public:
   /// create a wrapper shape to encapsulate arbitrary derived shapes
-  Shape(std::shared_ptr<Shape>&& shape) noexcept; //move constructor
+  Shape(std::shared_ptr<Shape>&& shape) noexcept;
   // Make the destructor virtual to ensure that deleting shape deletes the derived type.
   virtual ~Shape() noexcept = default;
 
@@ -21,7 +21,7 @@ public:
   /// check if the point is part of the shape's volume
   bool isInside(const Point3D& p) const;
 
-  // operators
+  //6.2
   Shape operator&(const Shape& other) const;
   Shape operator|(const Shape& other) const;
   Shape operator^(const Shape& other) const;
@@ -29,11 +29,10 @@ public:
   Shape operator+(const Shape& other) const;
   Shape operator-(const Shape& other) const;
 
-  // transformations
+  //6.3
   Shape scaled(Point3D factor) const;
   Shape translated(Point3D offset) const;
   Shape rotated(Axis axis, float angle) const;
-
 
 protected:
   // Protect default constructor to disallow instantiating abstract shapes.
