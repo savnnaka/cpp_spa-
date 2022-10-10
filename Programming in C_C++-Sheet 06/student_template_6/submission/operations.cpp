@@ -17,11 +17,11 @@ AABB Operation::getBounds_impl() const
 And::And(const Shape& shape_a, const Shape& shape_b): Operation(shape_a,shape_b){}
 
 Shape And::clone_impl() const {
-    return {std::make_shared<And>(this->sub_shape_a,this->sub_shape_b)}; 
+    return {std::make_shared<And>(sub_shape_a,sub_shape_b)}; 
 }
 
 bool And::isInside_impl(const Point3D &p) const {
-    return this->sub_shape_a.isInside(p) & this->sub_shape_b.isInside(p);
+    return sub_shape_a.isInside(p) & sub_shape_b.isInside(p);
 }
 
 Shape Shape::operator&(const Shape& other) const {
@@ -32,11 +32,11 @@ Shape Shape::operator&(const Shape& other) const {
 Or::Or(const Shape& shape_a, const Shape& shape_b):Operation(shape_a,shape_b){}
 
 Shape Or::clone_impl() const {
-    return {std::make_shared<Or>(this->sub_shape_a,this->sub_shape_b)}; 
+    return {std::make_shared<Or>(sub_shape_a,sub_shape_b)}; 
 }
 
 bool Or::isInside_impl(const Point3D &p) const {
-    return this->sub_shape_a.isInside(p) | this->sub_shape_b.isInside(p);
+    return sub_shape_a.isInside(p) | sub_shape_b.isInside(p);
 }
 
 Shape Shape::operator|(const Shape& other) const {
@@ -47,11 +47,11 @@ Shape Shape::operator|(const Shape& other) const {
 Xor::Xor(const Shape& shape_a, const Shape& shape_b):Operation(shape_a,shape_b){}
 
 Shape Xor::clone_impl() const {
-    return {std::make_shared<Xor>(this->sub_shape_a,this->sub_shape_b)}; 
+    return {std::make_shared<Xor>(sub_shape_a,sub_shape_b)}; 
 }
 
 bool Xor::isInside_impl(const Point3D &p) const {
-    return this->sub_shape_a.isInside(p) ^ this->sub_shape_b.isInside(p);
+    return sub_shape_a.isInside(p) ^ sub_shape_b.isInside(p);
 }
 
 Shape Shape::operator^(const Shape& other) const {
@@ -62,11 +62,11 @@ Shape Shape::operator^(const Shape& other) const {
 Not::Not(const Shape& shape_a):Operation{shape_a, shape_a}{};
 
 Shape Not::clone_impl() const {
-    return {std::make_shared<Not>(this->sub_shape_a)}; 
+    return {std::make_shared<Not>(sub_shape_a)}; 
 }
 
 bool Not::isInside_impl(const Point3D &p) const {
-    return !this->sub_shape_a.isInside(p);
+    return !sub_shape_a.isInside(p);
 }
 
 Shape Shape::operator!() const {
@@ -75,10 +75,10 @@ Shape Shape::operator!() const {
 
 //Plus
 Shape Shape::operator+(const Shape& other) const{
-    return Shape::operator^(other).Shape::operator|(Shape::operator&(other));
+    return *this | other;
 }
 
 //Minus
 Shape Shape::operator-(const Shape& other) const{
-    return Shape::operator&(other.Shape::operator!());
+    return *this & !other;
 }

@@ -109,6 +109,9 @@ Shape Octahedron::clone_impl() const{
 }
 
 bool Octahedron::isInside_impl(const Point3D& p) const{
-    return abs(static_cast<int>(p.x)) + abs(static_cast<int>(p.y)) + abs(static_cast<int>(p.z)) <= 1;
+    float absX = p.x >= 0 ? p.x : - p.x;
+    float absY = p.y >= 0 ? p.y : - p.y;
+    float absZ = p.z >= 0 ? p.z : - p.z;
+    return absX + absY + absZ <= 1;
 }
 

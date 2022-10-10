@@ -1,5 +1,6 @@
 #include "transformations.h"
 #include "point3d.h"
+#include <algorithm>
 #include <cmath>
 
 // helper function for 2D rotations
@@ -86,42 +87,75 @@ AABB Rotated::getBounds_impl() const {
     Point3D max = bounds.max;
     if (axis == Axis::X){
         std::pair<float,float> rotateMin = rotate2D(min.y, min.z, angle);
-        bounds.min = Point3D(min.x, rotateMin.first, rotateMin.second);
-
+        std::pair<float,float> rotateMinMax = rotate2D(min.y, max.z, angle);
+        std::pair<float,float> rotateMaxMin = rotate2D(max.y, min.z, angle);
         std::pair<float,float> rotateMax = rotate2D(max.y, max.z, angle);
-        bounds.max = Point3D(max.x, rotateMax.first, rotateMax.second);
+
+        float minY = std::min(std::min(rotateMin.second,rotateMax.second), 
+                                std::min(rotateMinMax.second, rotateMaxMin.second));
+        float minZ = std::min(std::min(rotateMin.first,rotateMax.first), 
+                                std::min(rotateMinMax.first, rotateMaxMin.first));
+        bounds.min = Point3D(min.x, minY, minZ);
+
+        float maxY = std::max(std::max(rotateMin.second,rotateMax.second), 
+                            std::max(rotateMinMax.second, rotateMaxMin.second));
+        float maxZ = std::max(std::max(rotateMin.first,rotateMax.first),
+                            std::max(rotateMinMax.first, rotateMaxMin.first));
+        bounds.max = Point3D(max.x, maxY, maxZ);
     }
     else if (axis == Axis::Y){
         std::pair<float,float> rotateMin = rotate2D(min.z, min.x, angle);
-        bounds.min = Point3D(rotateMin.second, min.y, rotateMin.first);
-
+        std::pair<float,float> rotateMinMax = rotate2D(min.z, max.x, angle);
+        std::pair<float,float> rotateMaxMin = rotate2D(max.z, min.x, angle);
         std::pair<float,float> rotateMax = rotate2D(max.z, max.x, angle);
-        bounds.max = Point3D(rotateMax.second, max.y, rotateMax.first);
+
+        float minZ = std::min(std::min(rotateMin.second,rotateMax.second), 
+                                std::min(rotateMinMax.second, rotateMaxMin.second));
+        float minX = std::min(std::min(rotateMin.first,rotateMax.first), 
+                                std::min(rotateMinMax.first, rotateMaxMin.first));
+        bounds.min = Point3D(minX, min.y, minZ);
+
+        float maxZ = std::max(std::max(rotateMin.second,rotateMax.second), 
+                                std::max(rotateMinMax.second, rotateMaxMin.second));
+        float maxX = std::max(std::max(rotateMin.first,rotateMax.first), 
+                                std::max(rotateMinMax.first, rotateMaxMin.first));
+        bounds.max = Point3D(maxX, max.y, maxZ);
     }
     else {
         std::pair<float,float> rotateMin = rotate2D(min.x, min.y, angle);
-        bounds.min = Point3D(rotateMin.first, rotateMin.second, min.z);
-
+        std::pair<float,float> rotateMinMax = rotate2D(min.x, max.y, angle);
+        std::pair<float,float> rotateMaxMin = rotate2D(max.x, min.y, angle);
         std::pair<float,float> rotateMax = rotate2D(max.x, max.y, angle);
-        bounds.max = Point3D(rotateMax.first, rotateMax.second, max.z);
+
+        float minX = std::min(std::min(rotateMin.second,rotateMax.second), 
+                                std::min(rotateMinMax.second, rotateMaxMin.second));
+        float minY = std::min(std::min(rotateMin.first,rotateMax.first), 
+                                std::min(rotateMinMax.first, rotateMaxMin.first));
+        bounds.min = Point3D(minX, minY, min.z);
+
+        float maxX = std::max(std::max(rotateMin.second,rotateMax.second), 
+                                std::max(rotateMinMax.second, rotateMaxMin.second));
+        float maxY = std::max(std::max(rotateMin.first,rotateMax.first), 
+                                std::max(rotateMinMax.first, rotateMaxMin.first));
+        bounds.max = Point3D(maxX, maxY, max.z);
     }
     return bounds;
 }
 
 bool Rotated::isInside_impl(const Point3D& p) const {
-    Point3D pRotated = Point3D(1.0f);
+    Point3D pRotated = p;
     float negAngle = -angle;
     if (axis == Axis::X){
         std::pair<float,float> rotate = rotate2D(p.y, p.z, negAngle);
-        pRotated = Point3D(p.x, rotate.first, rotate.second);
+        pRotated = Point3D(p.x, rotate.second, rotate.first);
     }
     else if(axis == Axis::Y){
         std::pair<float,float> rotate = rotate2D(p.z, p.x, negAngle);
-        pRotated = Point3D(rotate.second, p.y, rotate.first);
+        pRotated = Point3D(rotate.first, p.y, rotate.second);
     }
     else {
         std::pair<float,float> rotate = rotate2D(p.x, p.y, negAngle);
-        pRotated = Point3D(rotate.first, rotate.second, p.z);
+        pRotated = Point3D(rotate.second, rotate.first, p.z);
     }
     return sub_shape.isInside(pRotated);
 }
