@@ -25,7 +25,7 @@ bool And::isInside_impl(const Point3D &p) const {
 }
 
 Shape Shape::operator&(const Shape& other) const {
-    return And(*this, other).clone_impl();
+    return And(*this, other).clone();
 }
 
 //Or-Operation
@@ -40,7 +40,7 @@ bool Or::isInside_impl(const Point3D &p) const {
 }
 
 Shape Shape::operator|(const Shape& other) const {
-    return Or(*this, other).clone_impl();
+    return Or(*this, other).clone();
 }
 
 //Xor-Operation
@@ -55,7 +55,7 @@ bool Xor::isInside_impl(const Point3D &p) const {
 }
 
 Shape Shape::operator^(const Shape& other) const {
-    return Xor(*this, other).clone_impl();
+    return Xor(*this, other).clone();
 }
 
 //Not-Operation
@@ -70,7 +70,7 @@ bool Not::isInside_impl(const Point3D &p) const {
 }
 
 Shape Shape::operator!() const {
-    return Not(*this).clone_impl();
+    return Not(*this).clone();
 }
 
 //Plus

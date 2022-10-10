@@ -29,13 +29,12 @@ class Scaled : public Transformation {
 
 class Translated : public Transformation {
     public:
-        Point3D t;
-
+        Point3D t; //offset point
         Shape clone_impl() const override;
         AABB getBounds_impl() const override;
         bool isInside_impl(const Point3D& p) const override;
 
-        Translated(const Shape& shape, const Point3D& s);
+        Translated(const Shape& shape, const Point3D& t);
 };
 class Rotated : public Transformation {
     public:

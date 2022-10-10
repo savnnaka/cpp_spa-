@@ -45,10 +45,10 @@ target_link_libraries(submission PRIVATE project_options project_warnings)
 target_compile_definitions(submission PUBLIC TEST_TASK_1)
 target_compile_definitions(submission PUBLIC TEST_TASK_2)
 target_compile_definitions(submission PUBLIC TEST_TASK_3)
-# target_compile_definitions(submission PUBLIC TEST_TASK_4)
+target_compile_definitions(submission PUBLIC TEST_TASK_4)
 
 # TODO: enable this to see some example output (this will not compile until your implementation is complete)
-# target_compile_definitions(submission PUBLIC ENABLE_DEMO_CODE)
+target_compile_definitions(submission PUBLIC ENABLE_DEMO_CODE)
 
 find_package(OpenMP)
 if(OpenMP_CXX_FOUND)

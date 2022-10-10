@@ -51,7 +51,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 build cmake_object_order_depends_target_csg: phony || cmake_object_order_depends_target_submission
 
 build CMakeFiles/csg.dir/main.cpp.o: CXX_COMPILER__csg /home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming$ in$ C_C++-Sheet$ 06/student_template_6/main.cpp || cmake_object_order_depends_target_csg
-  DEFINES = -DTEST_TASK_1 -DTEST_TASK_2 -DTEST_TASK_3
+  DEFINES = -DENABLE_DEMO_CODE -DTEST_TASK_1 -DTEST_TASK_2 -DTEST_TASK_3 -DTEST_TASK_4
   DEP_FILE = CMakeFiles/csg.dir/main.cpp.o.d
   FLAGS = -g   -Wall -Wextra -Wshadow -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wsign-conversion -Wnull-dereference -Wdouble-promotion -Wformat=2 -Wmisleading-indentation -std=gnu++2a
   INCLUDES = -I"/home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/student_template_6/include" -I"/home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/student_template_6/submission"
@@ -85,7 +85,7 @@ build csg: CXX_EXECUTABLE_LINKER__csg CMakeFiles/csg.dir/main.cpp.o | libsubmiss
 build cmake_object_order_depends_target_submission: phony || CMakeFiles/submission.dir
 
 build CMakeFiles/submission.dir/submission/shapes.cpp.o: CXX_COMPILER__submission /home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming$ in$ C_C++-Sheet$ 06/student_template_6/submission/shapes.cpp || cmake_object_order_depends_target_submission
-  DEFINES = -DTEST_TASK_1 -DTEST_TASK_2 -DTEST_TASK_3 -Dsubmission_EXPORTS
+  DEFINES = -DENABLE_DEMO_CODE -DTEST_TASK_1 -DTEST_TASK_2 -DTEST_TASK_3 -DTEST_TASK_4 -Dsubmission_EXPORTS
   DEP_FILE = CMakeFiles/submission.dir/submission/shapes.cpp.o.d
   FLAGS = -g -fPIC   -Wall -Wextra -Wshadow -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wsign-conversion -Wnull-dereference -Wdouble-promotion -Wformat=2 -Wmisleading-indentation -std=gnu++2a
   INCLUDES = -I"/home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/student_template_6/submission" -I"/home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/student_template_6/include"
@@ -93,7 +93,7 @@ build CMakeFiles/submission.dir/submission/shapes.cpp.o: CXX_COMPILER__submissio
   OBJECT_FILE_DIR = CMakeFiles/submission.dir/submission
 
 build CMakeFiles/submission.dir/submission/transformations.cpp.o: CXX_COMPILER__submission /home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming$ in$ C_C++-Sheet$ 06/student_template_6/submission/transformations.cpp || cmake_object_order_depends_target_submission
-  DEFINES = -DTEST_TASK_1 -DTEST_TASK_2 -DTEST_TASK_3 -Dsubmission_EXPORTS
+  DEFINES = -DENABLE_DEMO_CODE -DTEST_TASK_1 -DTEST_TASK_2 -DTEST_TASK_3 -DTEST_TASK_4 -Dsubmission_EXPORTS
   DEP_FILE = CMakeFiles/submission.dir/submission/transformations.cpp.o.d
   FLAGS = -g -fPIC   -Wall -Wextra -Wshadow -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wsign-conversion -Wnull-dereference -Wdouble-promotion -Wformat=2 -Wmisleading-indentation -std=gnu++2a
   INCLUDES = -I"/home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/student_template_6/submission" -I"/home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/student_template_6/include"
@@ -101,7 +101,7 @@ build CMakeFiles/submission.dir/submission/transformations.cpp.o: CXX_COMPILER__
   OBJECT_FILE_DIR = CMakeFiles/submission.dir/submission
 
 build CMakeFiles/submission.dir/submission/operations.cpp.o: CXX_COMPILER__submission /home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming$ in$ C_C++-Sheet$ 06/student_template_6/submission/operations.cpp || cmake_object_order_depends_target_submission
-  DEFINES = -DTEST_TASK_1 -DTEST_TASK_2 -DTEST_TASK_3 -Dsubmission_EXPORTS
+  DEFINES = -DENABLE_DEMO_CODE -DTEST_TASK_1 -DTEST_TASK_2 -DTEST_TASK_3 -DTEST_TASK_4 -Dsubmission_EXPORTS
   DEP_FILE = CMakeFiles/submission.dir/submission/operations.cpp.o.d
   FLAGS = -g -fPIC   -Wall -Wextra -Wshadow -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wsign-conversion -Wnull-dereference -Wdouble-promotion -Wformat=2 -Wmisleading-indentation -std=gnu++2a
   INCLUDES = -I"/home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/student_template_6/submission" -I"/home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/student_template_6/include"
@@ -109,7 +109,7 @@ build CMakeFiles/submission.dir/submission/operations.cpp.o: CXX_COMPILER__submi
   OBJECT_FILE_DIR = CMakeFiles/submission.dir/submission
 
 build CMakeFiles/submission.dir/submission/voxel_grid.cpp.o: CXX_COMPILER__submission /home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming$ in$ C_C++-Sheet$ 06/student_template_6/submission/voxel_grid.cpp || cmake_object_order_depends_target_submission
-  DEFINES = -DTEST_TASK_1 -DTEST_TASK_2 -DTEST_TASK_3 -Dsubmission_EXPORTS
+  DEFINES = -DENABLE_DEMO_CODE -DTEST_TASK_1 -DTEST_TASK_2 -DTEST_TASK_3 -DTEST_TASK_4 -Dsubmission_EXPORTS
   DEP_FILE = CMakeFiles/submission.dir/submission/voxel_grid.cpp.o.d
   FLAGS = -g -fPIC   -Wall -Wextra -Wshadow -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wsign-conversion -Wnull-dereference -Wdouble-promotion -Wformat=2 -Wmisleading-indentation -std=gnu++2a
   INCLUDES = -I"/home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/student_template_6/submission" -I"/home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/student_template_6/include"
@@ -117,7 +117,7 @@ build CMakeFiles/submission.dir/submission/voxel_grid.cpp.o: CXX_COMPILER__submi
   OBJECT_FILE_DIR = CMakeFiles/submission.dir/submission
 
 build CMakeFiles/submission.dir/submission/your_shape.cpp.o: CXX_COMPILER__submission /home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming$ in$ C_C++-Sheet$ 06/student_template_6/submission/your_shape.cpp || cmake_object_order_depends_target_submission
-  DEFINES = -DTEST_TASK_1 -DTEST_TASK_2 -DTEST_TASK_3 -Dsubmission_EXPORTS
+  DEFINES = -DENABLE_DEMO_CODE -DTEST_TASK_1 -DTEST_TASK_2 -DTEST_TASK_3 -DTEST_TASK_4 -Dsubmission_EXPORTS
   DEP_FILE = CMakeFiles/submission.dir/submission/your_shape.cpp.o.d
   FLAGS = -g -fPIC   -Wall -Wextra -Wshadow -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wsign-conversion -Wnull-dereference -Wdouble-promotion -Wformat=2 -Wmisleading-indentation -std=gnu++2a
   INCLUDES = -I"/home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/student_template_6/submission" -I"/home/karin/Schreibtisch/WS22/C++/ÜBUNGEN/Programming in C_C++-Sheet 06/student_template_6/include"
