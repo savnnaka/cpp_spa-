@@ -1,0 +1,4 @@
+/home/karin/Dokumente/Uni/WS22/C++/ÜBUNGEN/Sheet 11/student_template_11.1/build/CMakeFiles/rebuild_cache.dir
+/home/karin/Dokumente/Uni/WS22/C++/ÜBUNGEN/Sheet 11/student_template_11.1/build/CMakeFiles/shortest_paths.dir
+/home/karin/Dokumente/Uni/WS22/C++/ÜBUNGEN/Sheet 11/student_template_11.1/build/CMakeFiles/submission.dir
+/home/karin/Dokumente/Uni/WS22/C++/ÜBUNGEN/Sheet 11/student_template_11.1/build/CMakeFiles/edit_cache.dir

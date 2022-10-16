@@ -1,0 +1,13 @@
+[
+{
+  "directory": "/home/karin/Dokumente/Uni/WS22/C++/ÜBUNGEN/Sheet 11/student_template_11.1/build",
+  "command": "/usr/bin/clang++-13    -g   -Wall -Wextra -Wshadow -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wsign-conversion -Wnull-dereference -Wdouble-promotion -Wformat=2 -Wmisleading-indentation -std=gnu++2a -o CMakeFiles/shortest_paths.dir/main.cpp.o -c \"/home/karin/Dokumente/Uni/WS22/C++/ÜBUNGEN/Sheet 11/student_template_11.1/main.cpp\"",
+  "file": "/home/karin/Dokumente/Uni/WS22/C++/ÜBUNGEN/Sheet 11/student_template_11.1/main.cpp"
+},
+
+{
+  "directory": "/home/karin/Dokumente/Uni/WS22/C++/ÜBUNGEN/Sheet 11/student_template_11.1/build",
+  "command": "/usr/bin/clang++-13  -Dsubmission_EXPORTS -I../submission  -g -fPIC   -Wall -Wextra -Wshadow -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wsign-conversion -Wnull-dereference -Wdouble-promotion -Wformat=2 -Wmisleading-indentation -fopenmp=libomp -std=gnu++2a -o CMakeFiles/submission.dir/submission/shortest_paths.cpp.o -c \"/home/karin/Dokumente/Uni/WS22/C++/ÜBUNGEN/Sheet 11/student_template_11.1/submission/shortest_paths.cpp\"",
+  "file": "/home/karin/Dokumente/Uni/WS22/C++/ÜBUNGEN/Sheet 11/student_template_11.1/submission/shortest_paths.cpp"
+}
+]
