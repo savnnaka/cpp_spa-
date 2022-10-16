@@ -28,7 +28,6 @@ std::vector<size_t> ShortestPaths::compute_shortest_path(size_t from, size_t to)
     Location fromL = this->at(from);
 
     // Queue toExplore
-    // std::vector<size_t> *toExplore = new std::vector<size_t>{};
     std::vector<size_t> toExplore;
 
     // Points that have already been visited
@@ -44,16 +43,9 @@ std::vector<size_t> ShortestPaths::compute_shortest_path(size_t from, size_t to)
     auto compare = [&dists](size_t a, size_t b) {return dists.at(a) > dists.at(b);};
     toExplore.push_back(from);
     push_heap(toExplore.begin(), toExplore.end());
-    //std::make_heap(toExplore.begin(), toExplore.end(), compare);
-    // std::make_heap(toExplore->begin(), toExplore->end(), compare);
 
     while( !toExplore.empty() ){
         // fetch the point with the shortest distance from the startpoint & remove from queue
-        // std::pop_heap(toExplore->begin(), toExplore->end(), compare);
-        // size_t elem = toExplore->back();
-        // toExplore->pop_back();
-
-        // alt:
         size_t elem = toExplore.front();
         pop_heap(toExplore.begin(), toExplore.end());
         toExplore.pop_back();
@@ -82,11 +74,6 @@ std::vector<size_t> ShortestPaths::compute_shortest_path(size_t from, size_t to)
                         dists.at(i) = newDist;
                         predecessors.at(i) = elem;
                     }
-                    //toExplore.push_back(i);
-                    //std::push_heap(toExplore->begin(), toExplore->end(), compare);
-                    
-                    // toExplore->push_back(i);
-                    // std::make_heap(toExplore->begin(), toExplore->end(), compare);
 
                     toExplore.push_back(i);
                     push_heap(toExplore.begin(), toExplore.end(), compare);
@@ -95,7 +82,6 @@ std::vector<size_t> ShortestPaths::compute_shortest_path(size_t from, size_t to)
         }
 
     }
-    //delete toExplore;
     
     // trace back the path
     if( predecessors.at(to).has_value() ){
